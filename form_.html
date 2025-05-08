@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+
+<title>Form</title>
+<style>
+        body {
+            background-color: beige;
+        }
+        textarea {
+            background-color: white;
+            width: 100%;
+        }
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: red;
+            color: white;
+        }
+</style>
+</head>
+
+
+
+<body>
+<center>
+<h1>Tell me about you!</h1>
+
+<p>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"><b>Home</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="about_.html""><b>About</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="form_.html"><b>Reach out!</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="gallery.html"><b>Gallery</b></a>
+</p>
+</center>
+<!--Your HTML tags will start here-->
+
+ <form action="submit_form.php" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+        
+        <label for="artist">Favorite Artist:</label>
+        <textarea id="request" name="request" rows="8" required></textarea><br><br>
+        
+        <label>Knowledge level:</label><br>
+        <input type="radio" id="know" name="know_level" value="know">
+        <label for="know">Just startin'</label><br>
+        <input type="radio" id="know" name="know_level" value="know">
+        <label for="know">Ive been around...</label><br>
+		<input type="radio" id="know" name="know_level" value="know">
+        <label for="know">I know more than I should...</label><br><br>
+        
+        <label for="request">More about you...:</label><br>
+        <textarea id="request" name="request" rows="8" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+<!--Your HTML tags will end here-->
+
+</body>
+
+</html>
